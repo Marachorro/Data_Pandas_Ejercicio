@@ -1,12 +1,12 @@
 # Data_Pandas_Ejercicio
 El presente informe tiene como objetivo describir y analizar las características principales del conjunto de datos disponible. Se incluirán tanto visualizaciones del análisis descriptivo como explicaciones de los resultados para poder analizar detalladamente. 
 
-# 2. descripción y origen de los datos 
+# 2. Descripción y origen de los datos 
 
 Los datos se han integrado a partir de un archivo excel y un archivo csv. Se han generado dos bases de datos separadas para cada uno de los archvivos y, poteriormente, se han integrado los datos en una única base de datos para facilitar el manejo, la limpieza y orden de los datos.
 El primer archivo utilizado es el de customer details, que, a su vez está compuesto de tres hojas de excel con información separada. Esto ha supuesto un total 20114  clientes con 6 columnas con información. Por otro lado, se encuentra también el archivo bank additional, con una única hoja donde aparecen datos relativos a los clientes como puede ser la tasa de variación de empleo o el índice de precios al consumidor.   
 
-# 3. transformación de los datos.
+# 3. Transformación de los datos.
 En cuanto a las transformaciones que se han llevado a cabo para poder trabajar con una base de datos limpia y ordenada
 
 *3.1 Carga de archivos*
@@ -36,14 +36,15 @@ para poder tratar los valores nulos se han llevado a cabo dos estrategias depend
 Variable categorica: los valores nulos han sido sustituidos por la mediana para no alterar los resultados. Se ha preferido usar la mediana a la media puesto que la media es muy sensibls a valores extremos, por tanto el resultado podría quedar alterado en caso de usarla para complementar los valores nulos. 
 Variable Numerica: los valores nulos han sido sustituidos por la moda -el valor mas frecuente en cada categoría- para no introducir categorías no existentes y alterar los datos 
 
-*3.3 Creación de variales*
+*3.4 Creación de variables*
 a. Year_sheet: con esta variable se ha podido estudiar la diferencia en afiliaciones según años, lo que ha permitido visualizar el incremento en afiliaciones entre 2013 y 2014. 
 b. Hijos: una variable que, posteriormente, no se ha utilizado parallevar a cabo análisis, pero se ha generado para conocer y explorar la composición familiar de los clientes.
 c. Grupos por igresos y grupos por edad: para pode representar de manera correcta datos tan dispares y diversos, se ha decidido crear varaiables etxra que agrupen estos valores, facilitando la represnetación e interpretación de los datos. 
 
 # 4. Interpretación y visualizaciones. 
 
-Se han llevado a cabo diferentes visualizaciones gracias a matplotlib, a continuación se explican todas las que se han llevado a cabo y la 
+Se han llevado a cabo diferentes visualizaciones gracias a matplotlib, a continuación se decriben y analizan cada una e ellas en detalle. 
+
 *4.1 Distribución de clientes por grupos de edad*
 La primera de las visualizaciones es la distribución nde clientes por grupo de edad, en la cual podemos apeciar que la mayor parte de los/as clientes se concentra entre  los 30 y 40 años, con 20729 personas, seguido del grupo de entre 50 y 60, con 9650 personas que conforman el grupo. Esto indica que la base de los clientes está compuesta por personas en etapas de adultez consolidada, pudiendo influir, generalmente, en la estabilidad económica de los mismos y en la demanda de productos ofertados por la compañía. 
 
@@ -62,7 +63,7 @@ Solo el 15.2% de los/as clientes/as actuales tiene algún otro tipo de préstamo
 
 Por otro lado, es relevante mencionar que el 54.7% de los/as clientes/as sí dispone de un prestamo hipotecario. Esto sugiere que más de la mitad de los clienes están vinculados a deudas a largo plazo, que podrían influir en la estabilidad económica de los/as mismos/as.
 
-*4.6 boxplot salarios*
+*4.6 boxplot Salarios*
 
 El boxplot de salarios muestra que los cuartiles 2 y 3 abarcan un rango aproximado entre 50k € y 135k €, con una mediana cercana a los 90 000 €. Esto significa que el 50% central de la plantilla se sitúa dentro de ese intervalo salarial. Esto implica que el 25% de los/as clientes tienen salarios inferiores a los 50K, que conformarían el cuartil 1, y, también el 25% restante que percibe salarios superiores a los 135K, que conformarían el cuartil 4. 
 Esto indica que los salarios que perciben los/as clientes/as son bastante diversos, reflejando una distribución salarial amplia 
@@ -74,4 +75,4 @@ El boxpot de edad muestra que los cuartiles 2 y 3 están conformados por cliente
 # 5. Hipótesis 
 
 a. El crecimiento del 57% mencionado previamente podría estar relacionado con cambios en la estrategia comercial, las campañas de captación o cambios en el poder adquisitivo de las entre los años 2012 y 2013. 
-b. EL banco atrae a personas principalemente en etapas de la adultez consolidadas, con perfiles educativos y laborales diversos, lo cual puede indicar una amplia gama de productos que se ajustan a diferenes sectores de la población.
+b. El banco atrae a personas principalemente en etapas de la adultez consolidadas, con perfiles educativos y laborales diversos, lo cual puede indicar una amplia gama de productos que se ajustan a diferenes sectores de la población.
